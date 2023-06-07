@@ -27,6 +27,13 @@
     $ bundle exec pod install
 ```
 
+# Usage
+
+* Skyway で発行したトークンをセットする([参考](https://skyway.ntt.com/ja/docs/user-guide/authentication/))
+```swift
+final class SkywayConnectionManager {
+    private static let token = ""
+```
 
 # License
 
