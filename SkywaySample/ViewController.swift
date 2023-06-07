@@ -382,6 +382,6 @@ final class ItemCell: UICollectionViewCell {
         
         self.videoView.setStream(stream: stream)
         
-        self.muteIcon.isHidden = stream.isMute
+        self.muteIcon.isHidden = !stream.isMute
     }
 }

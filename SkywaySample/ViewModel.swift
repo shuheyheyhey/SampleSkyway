@@ -89,7 +89,7 @@ extension ViewModel {
     func switchMute() async throws {
         try await self.skywayConnectionManager.switchMute()
         let isMute = await self.skywayConnectionManager.isMute
-        self.muteState = !isMute ? .mute : .unmute
+        self.muteState = isMute ? .mute : .unmute
     }
     
     func switchSpeaker() async {
