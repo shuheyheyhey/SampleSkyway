@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     
     private let activityIndicator = UIActivityIndicatorView()
     
-    private let conferenceToolBar = UIToolbar()
+    private let conferenceToolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
     private var muteButton: UIBarButtonItem?
     private var cameraButton: UIBarButtonItem?
     private var cameraPositionButton: UIBarButtonItem?
@@ -158,8 +158,8 @@ class ViewController: UIViewController {
         
         self.settingStackView.translatesAutoresizingMaskIntoConstraints = false
         self.settingStackView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor).isActive = true
-        self.settingStackView.leftAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leftAnchor).isActive = true
-        self.settingStackView.rightAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.rightAnchor).isActive = true
+        self.settingStackView.leftAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leftAnchor, constant: 10).isActive = true
+        self.settingStackView.rightAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.rightAnchor, constant: -10).isActive = true
         self.settingStackView.heightAnchor.constraint(equalToConstant: 80).isActive = true
         self.settingStackView.bottomAnchor.constraint(equalTo: self.collectionView.topAnchor).isActive = true
         
@@ -170,10 +170,9 @@ class ViewController: UIViewController {
         self.collectionView.bottomAnchor.constraint(equalTo: self.conferenceToolBar.topAnchor).isActive = true
         
         self.conferenceToolBar.translatesAutoresizingMaskIntoConstraints = false
-        self.conferenceToolBar.heightAnchor.constraint(equalToConstant: 60).isActive = true
-        self.conferenceToolBar.leftAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leftAnchor).isActive = true
-        self.conferenceToolBar.rightAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.rightAnchor).isActive = true
-        self.conferenceToolBar.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        self.conferenceToolBar.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
+        self.conferenceToolBar.rightAnchor.constraint(equalTo: self.view.rightAnchor).isActive = true
+        self.conferenceToolBar.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
     }
     
     private func bind() {
@@ -342,7 +341,7 @@ final class ItemCell: UICollectionViewCell {
         self.horizontalStackView.distribution = .fill
         self.contentView.addSubview(self.horizontalStackView)
         
-        self.muteIcon.image = MuteState.unmute.iconImage?.withRenderingMode(.alwaysTemplate).withAlignmentRectInsets(UIEdgeInsets(top: -10, left: -10, bottom: -10, right: -10))
+        self.muteIcon.image = MuteState.unmute.iconImage?.withRenderingMode(.alwaysTemplate).withAlignmentRectInsets(UIEdgeInsets(top: -12, left: -12, bottom: -12, right: -12))
         self.muteIcon.tintColor = .red
         self.muteIcon.setContentCompressionResistancePriority(.required, for: .horizontal)
         self.muteIcon.setContentHuggingPriority(.required, for: .horizontal)
