@@ -143,6 +143,11 @@ actor Streams {
         self.remoteStreams = newStreams
         return updatedStream
     }
+    
+    func removeAll() {
+        self.localStream = nil
+        self.remoteStreams = []
+    }
 }
 
 final class SkywayStreamManager {

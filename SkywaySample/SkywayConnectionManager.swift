@@ -225,7 +225,7 @@ actor ConferenceSettingsStatus {
 
 final class SkywayConnectionManager {
     private static let token = ""
-    private static let userName = "Test"
+    private static let userName = "TestUserA"
     
     
     public weak var delegate: ConferenceConnectionDelegate?
@@ -290,6 +290,8 @@ final class SkywayConnectionManager {
         guard let connectedObject = await self.skywayConnections.setToNilIfNeeded() else {
             throw ConferenceConnectionError.nowDisconnecting
         }
+        
+        await self.streamManager.streams.removeAll()
 
         // ここで問題が起きても無視して処理を継続させてコンテキストを終了させる
         try? await connectedObject.me.leave()
