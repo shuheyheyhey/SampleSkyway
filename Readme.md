@@ -1,6 +1,7 @@
 # SkywaySample
 
 [Skyway SDK](https://skyway.ntt.com/ja/docs/)を用いた通話実装のサンプル
+![サンプル](https://github.com/shuheyheyhey/SampleSkyway/blob/main/example.PNG "")
 
 # Requirement
 
