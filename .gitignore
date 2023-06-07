@@ -1,0 +1,14 @@
+.DS_Store
+/Pods/
+/SkywaySample.xcworkspace/
+/SkywaySample.xcodeproj/xcuserdata
+/SkywaySample.xcodeproj/project.xcworkspace
+/DerivedData
+
+# Ignore bundler config.
+/.bundle
+
+# Ignore bundler gems.
+vendor/bundle
+
+

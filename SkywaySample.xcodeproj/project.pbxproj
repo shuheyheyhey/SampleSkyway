@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A08364E5F61538E81E478139 /* libPods-SkywaySample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F439C7DE0D8E0108D2D0379C /* libPods-SkywaySample.a */; };
+		CF151C392A1616140030A16E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF151C382A1616140030A16E /* AppDelegate.swift */; };
+		CF151C3B2A1616140030A16E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF151C3A2A1616140030A16E /* SceneDelegate.swift */; };
+		CF151C3D2A1616140030A16E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF151C3C2A1616140030A16E /* ViewController.swift */; };
+		CF151C402A1616140030A16E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF151C3E2A1616140030A16E /* Main.storyboard */; };
+		CF151C422A1616180030A16E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF151C412A1616180030A16E /* Assets.xcassets */; };
+		CF151C452A1616180030A16E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF151C432A1616180030A16E /* LaunchScreen.storyboard */; };
+		CF151C4D2A161DB30030A16E /* SkywayConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF151C4C2A161DB30030A16E /* SkywayConnectionManager.swift */; };
+		CF8812802A29A29A00315175 /* SkywayStreamManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88127F2A29A29A00315175 /* SkywayStreamManager.swift */; };
+		CF8812842A2D9F1500315175 /* SpeakerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8812832A2D9F1500315175 /* SpeakerController.swift */; };
+		CF8812862A2D9F8A00315175 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8812852A2D9F8A00315175 /* ViewModel.swift */; };
+		CF8812882A2F212700315175 /* SkywayVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8812872A2F212700315175 /* SkywayVideoView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		83537D4BDECBCC857F35C25E /* Pods-SkywaySample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkywaySample.debug.xcconfig"; path = "Target Support Files/Pods-SkywaySample/Pods-SkywaySample.debug.xcconfig"; sourceTree = "<group>"; };
+		CF151C352A1616140030A16E /* SkywaySample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkywaySample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF151C382A1616140030A16E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF151C3A2A1616140030A16E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CF151C3C2A1616140030A16E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF151C3F2A1616140030A16E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF151C412A1616180030A16E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF151C442A1616180030A16E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF151C462A1616180030A16E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF151C4C2A161DB30030A16E /* SkywayConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkywayConnectionManager.swift; sourceTree = "<group>"; };
+		CF88127F2A29A29A00315175 /* SkywayStreamManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkywayStreamManager.swift; sourceTree = "<group>"; };
+		CF8812832A2D9F1500315175 /* SpeakerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerController.swift; sourceTree = "<group>"; };
+		CF8812852A2D9F8A00315175 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		CF8812872A2F212700315175 /* SkywayVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkywayVideoView.swift; sourceTree = "<group>"; };
+		D8070E624CEF13DFFE436013 /* Pods-SkywaySample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkywaySample.release.xcconfig"; path = "Target Support Files/Pods-SkywaySample/Pods-SkywaySample.release.xcconfig"; sourceTree = "<group>"; };
+		F439C7DE0D8E0108D2D0379C /* libPods-SkywaySample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SkywaySample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF151C322A1616140030A16E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A08364E5F61538E81E478139 /* libPods-SkywaySample.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E619E441EB57CAB52219970 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83537D4BDECBCC857F35C25E /* Pods-SkywaySample.debug.xcconfig */,
+				D8070E624CEF13DFFE436013 /* Pods-SkywaySample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		42351E481ABB4885FE2BDCDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F439C7DE0D8E0108D2D0379C /* libPods-SkywaySample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF151C2C2A1616140030A16E = {
+			isa = PBXGroup;
+			children = (
+				CF151C372A1616140030A16E /* SkywaySample */,
+				CF151C362A1616140030A16E /* Products */,
+				0E619E441EB57CAB52219970 /* Pods */,
+				42351E481ABB4885FE2BDCDB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CF151C362A1616140030A16E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF151C352A1616140030A16E /* SkywaySample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF151C372A1616140030A16E /* SkywaySample */ = {
+			isa = PBXGroup;
+			children = (
+				CF151C382A1616140030A16E /* AppDelegate.swift */,
+				CF151C3A2A1616140030A16E /* SceneDelegate.swift */,
+				CF151C3C2A1616140030A16E /* ViewController.swift */,
+				CF8812852A2D9F8A00315175 /* ViewModel.swift */,
+				CF151C4C2A161DB30030A16E /* SkywayConnectionManager.swift */,
+				CF8812872A2F212700315175 /* SkywayVideoView.swift */,
+				CF8812832A2D9F1500315175 /* SpeakerController.swift */,
+				CF88127F2A29A29A00315175 /* SkywayStreamManager.swift */,
+				CF151C3E2A1616140030A16E /* Main.storyboard */,
+				CF151C412A1616180030A16E /* Assets.xcassets */,
+				CF151C432A1616180030A16E /* LaunchScreen.storyboard */,
+				CF151C462A1616180030A16E /* Info.plist */,
+			);
+			path = SkywaySample;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF151C342A1616140030A16E /* SkywaySample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF151C492A1616180030A16E /* Build configuration list for PBXNativeTarget "SkywaySample" */;
+			buildPhases = (
+				EF90A4472807D7C77DAE20B3 /* [CP] Check Pods Manifest.lock */,
+				CF151C312A1616140030A16E /* Sources */,
+				CF151C322A1616140030A16E /* Frameworks */,
+				CF151C332A1616140030A16E /* Resources */,
+				1FF9410F7E30745FD91B9B24 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkywaySample;
+			productName = SkywaySample;
+			productReference = CF151C352A1616140030A16E /* SkywaySample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF151C2D2A1616140030A16E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					CF151C342A1616140030A16E = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = CF151C302A1616140030A16E /* Build configuration list for PBXProject "SkywaySample" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF151C2C2A1616140030A16E;
+			productRefGroup = CF151C362A1616140030A16E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF151C342A1616140030A16E /* SkywaySample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF151C332A1616140030A16E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF151C452A1616180030A16E /* LaunchScreen.storyboard in Resources */,
+				CF151C422A1616180030A16E /* Assets.xcassets in Resources */,
+				CF151C402A1616140030A16E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FF9410F7E30745FD91B9B24 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SkywaySample/Pods-SkywaySample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SkywaySample/Pods-SkywaySample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SkywaySample/Pods-SkywaySample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF90A4472807D7C77DAE20B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SkywaySample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF151C312A1616140030A16E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF8812882A2F212700315175 /* SkywayVideoView.swift in Sources */,
+				CF151C3D2A1616140030A16E /* ViewController.swift in Sources */,
+				CF151C392A1616140030A16E /* AppDelegate.swift in Sources */,
+				CF151C3B2A1616140030A16E /* SceneDelegate.swift in Sources */,
+				CF8812802A29A29A00315175 /* SkywayStreamManager.swift in Sources */,
+				CF8812842A2D9F1500315175 /* SpeakerController.swift in Sources */,
+				CF8812862A2D9F8A00315175 /* ViewModel.swift in Sources */,
+				CF151C4D2A161DB30030A16E /* SkywayConnectionManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CF151C3E2A1616140030A16E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF151C3F2A1616140030A16E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF151C432A1616180030A16E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF151C442A1616180030A16E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF151C472A1616180030A16E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF151C482A1616180030A16E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF151C4A2A1616180030A16E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83537D4BDECBCC857F35C25E /* Pods-SkywaySample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E2VQ649C5P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SkywaySample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lisb.Albero.SkywaySample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF151C4B2A1616180030A16E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8070E624CEF13DFFE436013 /* Pods-SkywaySample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E2VQ649C5P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SkywaySample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lisb.Albero.SkywaySample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF151C302A1616140030A16E /* Build configuration list for PBXProject "SkywaySample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF151C472A1616180030A16E /* Debug */,
+				CF151C482A1616180030A16E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF151C492A1616180030A16E /* Build configuration list for PBXNativeTarget "SkywaySample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF151C4A2A1616180030A16E /* Debug */,
+				CF151C4B2A1616180030A16E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF151C2D2A1616140030A16E /* Project object */;
+}
