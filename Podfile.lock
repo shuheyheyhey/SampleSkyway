@@ -1,11 +1,11 @@
 PODS:
-  - SkyWayCore (1.3.1):
+  - SkyWayCore (1.4.0):
     - WebRTC (= 104.0.1)
-  - SkyWayRoom (1.4.0):
-    - SkyWayCore (= 1.3.1)
-    - SkyWaySFUBot (= 1.1.0)
-  - SkyWaySFUBot (1.1.0):
-    - SkyWayCore (= 1.3.1)
+  - SkyWayRoom (1.5.0):
+    - SkyWayCore (= 1.4.0)
+    - SkyWaySFUBot (= 1.1.2)
+  - SkyWaySFUBot (1.1.2):
+    - SkyWayCore (= 1.4.0)
     - WebRTC (= 104.0.1)
   - WebRTC (104.0.1)
 
@@ -21,9 +21,9 @@ SPEC REPOS:
     - WebRTC
 
 SPEC CHECKSUMS:
-  SkyWayCore: 93d739735ee3d357157978c5173776467cde69da
-  SkyWayRoom: afd5e6d7f4b2fee0e67f3fda86c0daf8a436e1d1
-  SkyWaySFUBot: f982eee1efd811fef1c69c7d976c35aa89e62ad1
+  SkyWayCore: 964fa8896d010c6e8a9c4fb61ed1c9f1311b04d1
+  SkyWayRoom: adefe029fb45b617b70d421569f042f05827bc18
+  SkyWaySFUBot: 8cc5852426130b871e20461e7424fd1c3193be75
   WebRTC: d1aecd8308a3fb13e62cbdad949743e8114e59dc
 
 PODFILE CHECKSUM: 6239a629574f2e03081ce0b422d5cc1f7c651649
