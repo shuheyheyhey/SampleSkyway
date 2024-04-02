@@ -1,4 +1,5 @@
 PODS:
+<<<<<<< Updated upstream
   - SkyWayCore (1.4.0):
     - WebRTC (= 104.0.1)
   - SkyWayRoom (1.5.0):
@@ -8,6 +9,17 @@ PODS:
     - SkyWayCore (= 1.4.0)
     - WebRTC (= 104.0.1)
   - WebRTC (104.0.1)
+=======
+  - SkyWayCore (1.7.6):
+    - WebRTC (= 104.0.2)
+  - SkyWayRoom (1.8.6):
+    - SkyWayCore (= 1.7.6)
+    - SkyWaySFUBot (= 1.1.13)
+  - SkyWaySFUBot (1.1.13):
+    - SkyWayCore (= 1.7.6)
+    - WebRTC (= 104.0.2)
+  - WebRTC (104.0.2)
+>>>>>>> Stashed changes
 
 DEPENDENCIES:
   - SkyWayRoom
@@ -21,10 +33,17 @@ SPEC REPOS:
     - WebRTC
 
 SPEC CHECKSUMS:
+<<<<<<< Updated upstream
   SkyWayCore: 964fa8896d010c6e8a9c4fb61ed1c9f1311b04d1
   SkyWayRoom: adefe029fb45b617b70d421569f042f05827bc18
   SkyWaySFUBot: 8cc5852426130b871e20461e7424fd1c3193be75
   WebRTC: d1aecd8308a3fb13e62cbdad949743e8114e59dc
+=======
+  SkyWayCore: a2e8637e6715b57931a03afa532844b0f49312f4
+  SkyWayRoom: 517f841f420e47b179db632312526e85c228fefe
+  SkyWaySFUBot: 23bf2e1edcf88e6fd99a2c949d3e10e3efa782ea
+  WebRTC: 1f95fd23b0b7fe6de3bb895547a2d1d40f3fde02
+>>>>>>> Stashed changes
 
 PODFILE CHECKSUM: 6239a629574f2e03081ce0b422d5cc1f7c651649
 
