@@ -8,6 +8,7 @@
 import Foundation
 import SkyWayRoom
 import SkyWayCore
+import AudioToolbox
 
 public protocol ConferenceConnectionDelegate: AnyObject {
     func didCloseRoom()
@@ -448,6 +449,8 @@ extension SkywayConnectionManager {
                 self.streamDelegate?.streamChanged(stream: result)
             default:
                 _ = try await self.streamManager.subscribe(me: meObject, publication: publication)
+                let soundIdBell:SystemSoundID = 1000
+                AudioServicesPlaySystemSound(soundIdBell)
             }
         } catch let error {
             // エラーでリトライされている場合で再度失敗したパターン
@@ -531,6 +534,9 @@ extension SkywayConnectionManager: SkyWayRoom.RoomDelegate {
                 do {
                     guard let result = await self.streamManager.updateMuteForRemote(id: id, publication: publication) else { return }
                     _ = try await self.streamManager.subscribe(me: me, publication: publication)
+                    
+                    let soundIdBell:SystemSoundID = 1000
+                    AudioServicesPlaySystemSound(soundIdBell)
                     self.streamDelegate?.streamChanged(stream: result)
                 } catch let error {
                     self.delegate?.didReceiveStatusError(error: .receiveAudioError(error.toSkywayError() ?? error))
